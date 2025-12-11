@@ -33,7 +33,7 @@ myForm.addEventListener("submit", (e) => {
     // OUTPUT genera in pagina
     document.getElementById("costoBiglietto").innerHTML = 
     `<h4>Costo biglietto</h4> 
-    ${bigliettoFinale.toFixed(2)}`
+    ${"€ " + bigliettoFinale.toFixed(2)}`
 
     // OUTPUT annulla
     annulla.addEventListener("click", () => {

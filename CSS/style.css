@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: rgb(204, 0, 0);
+    color: white;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.fa-train {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#prezzo-biglietto {
+    padding-left: 20px;
+    font-weight: 700;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#myForm {
+    border: 1px solid grey;
+    border-radius: 6px;
+}
+
+.inputDati {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 0px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+}
+
+#genera, #annulla {
+    margin: 0px 20px;
+    padding: 3px 6px;
+    background-color: gainsboro;
+    color: rgb(204, 0, 0);
+    font-weight: 900;
+    border-radius: 3px;
+    border: 1px solid grey;
+}
+
+.btnDati {
+    padding: 3px 6px;
+    width: 200px;
+}
+
+#costoBiglietto {
+    margin-top: 50px;
+    padding: 30px 0px;
+    padding-left: 240px;
+    line-height: 2;
+    border: 1px solid grey;
+    border-radius: 6px;
+}
+
+#costoBiglietto p{
+    font-weight: 900;
+}
