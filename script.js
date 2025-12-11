@@ -1,5 +1,6 @@
 // OUTPUT
 const myForm = document.getElementById("myForm");
+const annulla = document.getElementById("annulla");
 
 myForm.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -20,7 +21,7 @@ myForm.addEventListener("submit", (e) => {
     let bigliettoFinale;
 
     if (sceltaEta === "minorenne") {
-        let bigliettoFinale = bigliettoBase * 0.8; // sconto del 20%
+        bigliettoFinale = bigliettoBase * 0.8; // sconto del 20%
     } else if (sceltaEta === "over-65") {
         bigliettoFinale = bigliettoBase * 0.6; // sconto del 40%
     } else {
@@ -29,8 +30,16 @@ myForm.addEventListener("submit", (e) => {
 
     console.log("Costo del biglietto", bigliettoFinale)
 
-    // // OUTPUT in pagina
-    document.getElementById("costoBiglietto").innerHTML = `<h4>Costo biglietto</h4> ${bigliettoFinale.toFixed(2)}`
+    // OUTPUT genera in pagina
+    document.getElementById("costoBiglietto").innerHTML = 
+    `<h4>Costo biglietto</h4> 
+    ${bigliettoFinale.toFixed(2)}`
+
+    // OUTPUT annulla
+    annulla.addEventListener("click", () => {
+        myForm.reset();
+        document.getElementById("costoBiglietto").innerHTML = ""; // reset dei dati
+    })
 
 })
 
