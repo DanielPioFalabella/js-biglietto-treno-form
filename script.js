@@ -1,9 +1,10 @@
+// INPUT
 // quanti km vuole percorrere il passeggero
-let numKm = ""
+let numKm = document.getElementById("numKm").value
 console.log("Km da percorrere:", numKm);
 
 // età del passeggero
-let etaPasseggero = ""
+let sceltaEta = document.getElementById("sceltaEta").value
 console.log("età del passeggero:", etaPasseggero);
 
 
@@ -18,11 +19,10 @@ if (etaPasseggero < 18) {
 } else if (etaPasseggero >= 65) {
     bigliettoFinale = bigliettoBase * 0.6;
     console.log("prezzo del biglietto", bigliettoFinale);
-    
 } else {
     bigliettoFinale = bigliettoBase;
     console.log("prezzo del biglietto", bigliettoFinale);
 }
 
-// OUTPUT in pagina
-document.getElementById("prezzo-biglietto").textContent = `Prezzo del biglietto: €${bigliettoFinale.toFixed(2)}`
+// // OUTPUT in pagina
+// document.getElementById("prezzo-biglietto").textContent = `Prezzo del biglietto: €${bigliettoFinale.toFixed(2)}`

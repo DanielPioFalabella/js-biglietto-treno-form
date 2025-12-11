@@ -11,11 +11,32 @@
 </head>
 
 <body>
-    <!-- <header>
+    <header>
         <a><i class="fa-solid fa-train"></i></a>
         <h1>Freccia Booleana</h1>
     </header>
-    <p id="prezzo-biglietto"></p> -->
-    <script src="./JS/script.js"></script>
+
+    <!-- <p id="prezzo-biglietto"></p> -->
+    <form action="#">
+        <label for="text">
+            <input id="nameUser" type="text" placeholder="Inserisci Nome e Cognome">
+        </label>
+        
+        <label for="number">
+            <input id="numKm" type="number" placeholder="Indica il numero di Km">
+        </label>
+
+        <label for="sceltaEta">
+            <select id="sceltaEta">
+                <option value="maggiorenne">Maggiorenne</option>
+                <option value="minorenne">Minorenne</option>
+                <option value="over-65">Over 65</option>
+            </select>
+        </label>
+
+        <button id="genera"> Genera</button>
+    </form>
+
+    <script src="./script.js"></script>
 </body>
 </html>
